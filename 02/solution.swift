@@ -14,9 +14,7 @@ while a <= 4000000 {
     if a % 2 == 0 {
         sumOfEvenTerms += a
     }
-    var c = b
-    b = a + b
-    a = c
+    (a, b) = (b, a + b)
 }
 
 println(sumOfEvenTerms)
